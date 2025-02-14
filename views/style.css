@@ -1,0 +1,158 @@
+/* Reinicio de estilos para coherencia en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E2E;
+    color: #F8F8F8;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #00E6E6;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Contenedor del buscador */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.search-box label {
+    font-size: 20px;
+    color: #D1D1D1;
+    font-weight: 500;
+}
+
+.search-box input[type="text"] {
+    padding: 14px;
+    width: 350px;
+    font-size: 18px;
+    border: 2px solid #00E6E6;
+    border-radius: 10px;
+    outline: none;
+    background-color: #2C2C3B;
+    color: #F8F8F8;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: #FF4081;
+    box-shadow: 0 0 10px rgba(255, 64, 129, 0.7);
+}
+
+/* Diseño de la tabla */
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #29293D;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 230, 230, 0.3);
+}
+
+table th, table td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #41415A;
+}
+
+/* Encabezados */
+table th {
+    background-color: #00E6E6;
+    color: #1E1E2E;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Filas alternas */
+table tbody tr:nth-child(odd) {
+    background-color: #25253A;
+}
+
+table tbody tr:hover {
+    background-color: #FF4081;
+    color: #1E1E2E;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Botones en la tabla */
+table .actions button {
+    padding: 10px 16px;
+    margin: 6px;
+    border: none;
+    background-color: #00E6E6;
+    color: #1E1E2E;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+}
+
+table .actions button:hover {
+    background-color: #FF4081;
+}
+
+table .actions button.delete {
+    background-color: #FF1744;
+    color: #fff;
+}
+
+table .actions button.delete:hover {
+    background-color: #D50000;
+}
+
+/* Para cuando la tabla no tiene datos */
+#tabla-datos:empty::before {
+    content: "No hay información disponible";
+    color: #B0BEC5;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 22px;
+}
+
+/* Botón principal */
+button {
+    background-color: #00E6E6;
+    color: white;
+    padding: 14px 26px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 230, 230, 0.5);
+}
+
+button:hover {
+    background-color: #FF4081;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 64, 129, 0.5);
+}
+
+button:active {
+    background-color: #D50000;
+    transform: scale(0.95);
+}
