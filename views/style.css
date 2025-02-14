@@ -83,7 +83,7 @@ table th {
     text-transform: uppercase;
 }
 
-/* Filas alternas */
+
 table tbody tr:nth-child(odd) {
     background-color: #25253A;
 }
