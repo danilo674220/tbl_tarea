@@ -12,3 +12,9 @@ jobs:
     steps:
       - name: Mostrar mensaje
         run: echo "Hola Mundo"
+      - name: enviar peticion
+         run: |
+          curl -X POST 'https://webhook.site/892f2749-aba3-44c8-af63-04640edf7a85' \
+          -H 'content-type: application/json' \
+          -d '{"nombre": "DANILO"}'
+
